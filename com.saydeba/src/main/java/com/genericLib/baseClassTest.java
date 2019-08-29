@@ -2,9 +2,10 @@ package com.genericLib;
 
 import java.util.Properties;
 
-public class baseClassTest {
-
-	public static void main(String[] args) {
+public class baseClassTest
+{
+	public static void main(String[] args)
+	{
 		public static WebDriver driver;
 		FileUtils lib=new FileUtils();
 		
