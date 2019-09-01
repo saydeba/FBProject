@@ -27,8 +27,6 @@ public class fileUtils
 	{
 		return pro.getProperty("ChromeDriver");
 	}
-	
-	
 	public String getURL()
 	{
 		return pro.getProperty("URL");
@@ -40,5 +38,10 @@ public class fileUtils
 	public String getPassword()
 	{
 		return pro.getProperty("Password");
+	}
+
+	public static void copyFile(File srcFile, File dstFile) {
+		// TODO Auto-generated method stub
+		
 	}
 }
