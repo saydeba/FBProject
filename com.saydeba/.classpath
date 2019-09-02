@@ -17,7 +17,6 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="con" path="org.testng.TESTNG_CONTAINER"/>
 	<classpathentry kind="lib" path="E:/Study_Materials/JDBC/Microsoft JDBC Driver 7.2 for SQL Server/sqljdbc_7.2/enu/mssql-jdbc-7.2.2.jre8.jar"/>
 	<classpathentry kind="lib" path="E:/Study_Materials/JDBC/Microsoft JDBC Driver 7.2 for SQL Server/sqljdbc_7.2/enu/mssql-jdbc-7.2.2.jre11.jar"/>
 	<classpathentry kind="lib" path="E:/eclipse-workspace_2019-06/Jars/jar_files/bson-3.0.4.jar"/>
@@ -54,11 +53,12 @@
 	<classpathentry kind="lib" path="E:/eclipse-workspace_2019-06/Jars/selenium-java-3.141.59/libs/guava-25.0-jre.jar"/>
 	<classpathentry kind="lib" path="E:/eclipse-workspace_2019-06/Jars/selenium-java-3.141.59/libs/okhttp-3.11.0.jar"/>
 	<classpathentry kind="lib" path="E:/eclipse-workspace_2019-06/Jars/selenium-java-3.141.59/libs/okio-1.14.0.jar"/>
-	<classpathentry kind="src" output="target/classes" path="src.gmail">
+	<classpathentry kind="src" output="target/classes" path="src.FB">
 		<attributes>
 			<attribute name="optional" value="true"/>
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="con" path="org.testng.TESTNG_CONTAINER"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
