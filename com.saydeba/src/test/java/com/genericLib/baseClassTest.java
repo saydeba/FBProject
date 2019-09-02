@@ -14,8 +14,8 @@ public  class baseClassTest
 		public static WebDriver wdriver;
 		
 	@Parameters("browser")
+	
 	@BeforeClass
-		
 	public void configBC(String bName)
 		{
 			commonObject co = new commonObject();
