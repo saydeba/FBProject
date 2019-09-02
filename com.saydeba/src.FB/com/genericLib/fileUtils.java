@@ -4,9 +4,9 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.util.Properties;
 
-public class fileUtils
+public class fileUtils 
 {
-	Properties pro;
+Properties pro;
 	
 	public fileUtils()
 	{
@@ -40,8 +40,5 @@ public class fileUtils
 		return pro.getProperty("Password");
 	}
 
-	public static void copyFile(File srcFile, File dstFile) {
-		// TODO Auto-generated method stub
-		
-	}
+
 }

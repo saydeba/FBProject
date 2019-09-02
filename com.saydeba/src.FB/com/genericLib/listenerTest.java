@@ -1,6 +1,8 @@
 package com.genericLib;
 
 import java.io.File;
+
+import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.support.events.EventFiringWebDriver;
 import org.testng.*;
@@ -25,7 +27,7 @@ public class listenerTest implements ITestListener
 		File dstFile = new File(fileImgPath.concat(failedTestName)+".png");
 		try
 		{
-			fileUtils.copyFile(srcFile, dstFile);
+			FileUtils.copyFile(srcFile, dstFile);
 		}
 		catch (Exception e)
 		{}
