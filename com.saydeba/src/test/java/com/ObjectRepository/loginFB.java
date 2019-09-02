@@ -1,10 +1,30 @@
 package com.ObjectRepository;
 
-public class loginFB {
+import org.openqa.selenium.support.PageFactory;
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+import com.genericLib.baseClassTest;
+import com.genericLib.webDriverCommonUtils;
 
-	}
 
+
+public class loginFB extends baseClassTest 
+{
+		webDriverCommonUtils wdcu = new webDriverCommonUtils();
+		fbXpathTest fbxp = new fbXpathTest();
+		
+		public void loginUID() throws Exception
+		{
+			wdcu.waitForPageToLoad();
+			PageFactory.initElements(wdriver, fbxp);
+			fbxp.emailOrPhone();
+			
+		}
+		public void loginPW() throws Exception
+		{
+			wdcu.waitForPageToLoad();
+			PageFactory.initElements(wdriver, fbxp);
+			fbxp.pwLoginID();
+		}
+		
+		
 }

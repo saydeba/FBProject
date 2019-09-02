@@ -1,10 +1,25 @@
 package com.ObjectRepository;
 
-public class logoutFB {
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+import com.genericLib.baseClassTest;
 
-	}
-
+public class logoutFB extends baseClassTest
+{	
+	
+		@FindBy(xpath= "//div[@id='logoutMenu']")
+		private WebElement logoutMenu;
+		
+		@FindBy(xpath = "//span[contains(text(),'Log Out')]")
+		private WebElement signout;
+		
+		public void logoutMenu()
+		{
+			logoutMenu.click();			
+		}
+		public void signout()
+		{
+			signout.click();
+		}
 }

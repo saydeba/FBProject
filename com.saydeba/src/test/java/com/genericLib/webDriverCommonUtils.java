@@ -1,10 +1,14 @@
 package com.genericLib;
 
-public class webDriverCommonUtils {
+import java.util.concurrent.TimeUnit;
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+public class webDriverCommonUtils
+{
+	public void waitForPageToLoad()
+	{
+		baseClassTest.wdriver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+		
 	}
+	
 
 }
