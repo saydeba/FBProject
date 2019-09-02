@@ -19,8 +19,6 @@ public class fbXpathTest extends baseClassTest
 	@FindBy(xpath="//input[@id='u_0_2']")   //login button
 	WebElement loginBtn;
 	
-	
-	
 	//Methods....
 	public void emailOrPhone() throws Exception //for email id or Phone
 	{
