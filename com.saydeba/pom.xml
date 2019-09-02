@@ -30,7 +30,7 @@
 	</dependency>
   </dependencies>
    <build>
-    <sourceDirectory>com.saydeba</sourceDirectory>
+    <sourceDirectory>src.FB</sourceDirectory>
     <plugins>
       <plugin>
         <artifactId>maven-compiler-plugin</artifactId>
