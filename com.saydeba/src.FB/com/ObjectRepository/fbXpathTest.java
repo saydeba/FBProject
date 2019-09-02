@@ -16,8 +16,8 @@ public class fbXpathTest extends baseClassTest
 	@FindBy(name ="pass")  //password enter
 	WebElement pwEnterEdtBox;
 	
-	@FindBy(xpath="//input[@id='u_0_a']")   //nxt button
-	WebElement nxtBtn;
+	@FindBy(xpath="//input[@id='u_0_2']")   //login button
+	WebElement loginBtn;
 	
 	
 	
@@ -32,7 +32,7 @@ public class fbXpathTest extends baseClassTest
 	{
 		pwEnterEdtBox.sendKeys(fu.getPassword());
 		Thread.sleep(500);
-		nxtBtn.click();
+		loginBtn.click();
 	}
 	
 	
