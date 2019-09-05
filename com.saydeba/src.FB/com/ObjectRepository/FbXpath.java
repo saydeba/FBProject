@@ -19,6 +19,9 @@ public class FbXpath extends BaseClass
 	@FindBy(xpath="//input[@id='u_0_2']")   //login button
 	WebElement loginBtn;
 	
+	@FindBy(xpath="//a[contains(text(),'Home')]") //Home button
+	WebElement clickHome;
+	
 	//Methods....
 	public void emailOrPhone() throws Exception //for email id or Phone
 	{
@@ -31,6 +34,11 @@ public class FbXpath extends BaseClass
 		pwEnterEdtBox.sendKeys(fu.getPassword());
 		Thread.sleep(500);
 		loginBtn.click();
+	}
+	public void clickHome() throws Exception   // for Home click
+	{
+		Thread.sleep(500);
+		clickHome.click();		
 	}
 	
 	
