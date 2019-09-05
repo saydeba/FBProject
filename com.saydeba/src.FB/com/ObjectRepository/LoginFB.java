@@ -24,6 +24,7 @@ public class LoginFB extends BaseClass
 			wdcu.waitForPageToLoad();
 			PageFactory.initElements(wdriver, fbxp);
 			fbxp.pwLoginID();
+			
 		}
 		
 		

@@ -33,6 +33,7 @@ public class FbXpath extends BaseClass
 	{
 		pwEnterEdtBox.sendKeys(fu.getPassword());
 		Thread.sleep(500);
+		wdriver.manage().window().maximize();
 		loginBtn.click();
 	}
 	public void clickHome() throws Exception   // for Home click
