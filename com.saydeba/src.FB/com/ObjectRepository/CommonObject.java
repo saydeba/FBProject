@@ -14,6 +14,7 @@ public class CommonObject extends BaseClass
 	{
 		System.setProperty("webdriver.chrome.driver", configUtils.getChromePath());
 		wdriver= new ChromeDriver();
+		wdriver.manage().window().maximize();
 		
 	}
 	
