@@ -11,7 +11,7 @@ public class LogoutFB extends BaseClass
 		@FindBy(xpath= "//div[@id='logoutMenu']")
 		private WebElement logoutMenu;
 		
-		@FindBy(xpath = "//span[contains(text(),'Log Out')]")
+		@FindBy(xpath = "//form[@id='u_5_3']")
 		private WebElement signout;
 		
 		public void logoutMenu()

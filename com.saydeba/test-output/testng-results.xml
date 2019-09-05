@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="40426" started-at="2019-09-05T10:04:13 IST" finished-at="2019-09-05T10:04:54 IST">
+  <suite name="Suite" duration-ms="60492" started-at="2019-09-05T23:39:45 IST" finished-at="2019-09-05T23:40:46 IST">
     <groups>
     </groups>
-    <test name="Test" duration-ms="40426" started-at="2019-09-05T10:04:13 IST" finished-at="2019-09-05T10:04:54 IST">
+    <test name="Test" duration-ms="60492" started-at="2019-09-05T23:39:45 IST" finished-at="2019-09-05T23:40:46 IST">
       <class name="com.testCases.HomeButtonClick">
-        <test-method status="PASS" signature="configBC(java.lang.String)[pri:0, instance:com.testCases.HomeButtonClick@7c29daf3]" name="configBC" is-config="true" duration-ms="3782" started-at="2019-09-05T10:04:13 IST" finished-at="2019-09-05T10:04:17 IST">
+        <test-method status="PASS" signature="configBC(java.lang.String)[pri:0, instance:com.testCases.HomeButtonClick@7c29daf3]" name="configBC" is-config="true" duration-ms="3872" started-at="2019-09-05T23:39:45 IST" finished-at="2019-09-05T23:39:49 IST">
           <params>
             <param index="0">
               <value>
@@ -18,11 +18,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configBC -->
-        <test-method status="PASS" signature="configBM()[pri:0, instance:com.testCases.HomeButtonClick@7c29daf3]" name="configBM" is-config="true" duration-ms="34560" started-at="2019-09-05T10:04:17 IST" finished-at="2019-09-05T10:04:52 IST">
+        <test-method status="PASS" signature="configBM()[pri:0, instance:com.testCases.HomeButtonClick@7c29daf3]" name="configBM" is-config="true" duration-ms="54868" started-at="2019-09-05T23:39:49 IST" finished-at="2019-09-05T23:40:44 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configBM -->
-        <test-method status="FAIL" signature="newerIcTest()[pri:0, instance:com.testCases.HomeButtonClick@7c29daf3]" name="newerIcTest" duration-ms="1016" started-at="2019-09-05T10:04:52 IST" finished-at="2019-09-05T10:04:53 IST">
+        <test-method status="FAIL" signature="newerIcTest()[pri:0, instance:com.testCases.HomeButtonClick@7c29daf3]" name="newerIcTest" duration-ms="1014" started-at="2019-09-05T23:40:44 IST" finished-at="2019-09-05T23:40:45 IST">
           <exception class="java.lang.NullPointerException">
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
@@ -57,7 +57,7 @@ at java.lang.Thread.run(Thread.java:748)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- newerIcTest -->
-        <test-method status="FAIL" signature="configAM()[pri:0, instance:com.testCases.HomeButtonClick@7c29daf3]" name="configAM" is-config="true" duration-ms="145" started-at="2019-09-05T10:04:54 IST" finished-at="2019-09-05T10:04:54 IST">
+        <test-method status="FAIL" signature="configAM()[pri:0, instance:com.testCases.HomeButtonClick@7c29daf3]" name="configAM" is-config="true" duration-ms="102" started-at="2019-09-05T23:40:46 IST" finished-at="2019-09-05T23:40:46 IST">
           <exception class="org.openqa.selenium.WebDriverException">
             <message>
               <![CDATA[unknown error: Element <div class="_6a _6b uiPopover _1io_ _5v-0" id="logoutMenu" data-nocookies="1">...</div> is not clickable at point (1163, 21). Other element would receive the click: <div class="_3ixn"></div>
@@ -68,7 +68,7 @@ Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25
 System info: host: 'DESKTOP-SAYAK', ip: '192.168.0.101', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
 Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.40.565498 (ea082db3280dd6..., userDataDir: C:\Users\SAYAK\AppData\Loca...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 76.0.3809.132, webStorageEnabled: true}
-Session ID: bd7626949c9b726fade2d4c7d007160f]]>
+Session ID: b6f9f3d74b2cb9716ef81d189f5c8784]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.WebDriverException: unknown error: Element <div class="_6a _6b uiPopover _1io_ _5v-0" id="logoutMenu" data-nocookies="1">...</div> is not clickable at point (1163, 21). Other element would receive the click: <div class="_3ixn"></div>
@@ -79,7 +79,7 @@ Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25
 System info: host: 'DESKTOP-SAYAK', ip: '192.168.0.101', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
 Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.40.565498 (ea082db3280dd6..., userDataDir: C:\Users\SAYAK\AppData\Loca...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 76.0.3809.132, webStorageEnabled: true}
-Session ID: bd7626949c9b726fade2d4c7d007160f
+Session ID: b6f9f3d74b2cb9716ef81d189f5c8784
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -136,7 +136,7 @@ at java.lang.Thread.run(Thread.java:748)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configAM -->
-        <test-method status="SKIP" signature="configAC()[pri:0, instance:com.testCases.HomeButtonClick@7c29daf3]" name="configAC" is-config="true" duration-ms="-1567658094183" started-at="2019-09-05T10:04:54 IST" finished-at="1970-01-01T05:30:00 IST">
+        <test-method status="SKIP" signature="configAC()[pri:0, instance:com.testCases.HomeButtonClick@7c29daf3]" name="configAC" is-config="true" duration-ms="-1567707046415" started-at="2019-09-05T23:40:46 IST" finished-at="1970-01-01T05:30:00 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configAC -->

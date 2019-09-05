@@ -16,10 +16,10 @@ public class FbXpath extends BaseClass
 	@FindBy(name ="pass")  //password enter
 	WebElement pwEnterEdtBox;
 	
-	@FindBy(xpath="//input[@id='u_0_2']")   //login button
+	@FindBy(xpath="//input[@value='Log In']")   //login button
 	WebElement loginBtn;
 	
-	@FindBy(xpath="//a[contains(text(),'Home')]") //Home button
+	@FindBy(xpath="//div[@id='u_0_c']") //Home button
 	WebElement clickHome;
 	
 	//Methods....
@@ -32,9 +32,9 @@ public class FbXpath extends BaseClass
 	public void pwLoginID() throws Exception //for password
 	{
 		pwEnterEdtBox.sendKeys(fu.getPassword());
-		Thread.sleep(500);
-		wdriver.manage().window().maximize();
 		loginBtn.click();
+		Thread.sleep(200);
+		wdriver.manage().window().maximize();
 	}
 	public void clickHome() throws Exception   // for Home click
 	{

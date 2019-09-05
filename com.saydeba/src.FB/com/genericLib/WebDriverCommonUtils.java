@@ -6,9 +6,9 @@ public class WebDriverCommonUtils
 {
 	public void waitForPageToLoad()
 	{
-		BaseClass.wdriver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
-		
+		BaseClass.wdriver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);		
 	}
+	
 	
 
 }
