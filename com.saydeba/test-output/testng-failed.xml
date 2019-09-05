@@ -7,12 +7,7 @@
   <test thread-count="5" name="Test(failed)" parallel="tests">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="com.saydeba.signIn">
-        <methods>
-          <include name="configBC"/>
-          <include name="emailOrPhone"/>
-        </methods>
-      </class> <!-- com.saydeba.signIn -->
+      
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

@@ -3,9 +3,9 @@ package com.ObjectRepository;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-import com.genericLib.baseClassTest;
+import com.genericLib.BaseClass;
 
-public class logoutFB extends baseClassTest
+public class LogoutFB extends BaseClass
 {	
 	
 		@FindBy(xpath= "//div[@id='logoutMenu']")

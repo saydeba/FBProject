@@ -2,12 +2,12 @@ package com.ObjectRepository;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import com.genericLib.baseClassTest;
-import com.genericLib.fileUtils;
+import com.genericLib.BaseClass;
+import com.genericLib.FileUtils;
 
-public class fbXpathTest extends baseClassTest
+public class FbXpath extends BaseClass
 {
-	fileUtils fu = new fileUtils();
+	FileUtils fu = new FileUtils();
 	
 	//data member field...
 	@FindBy(name="email")  //email enter....

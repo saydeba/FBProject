@@ -3,12 +3,12 @@ package com.genericLib;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.*;
-import com.ObjectRepository.commonObject;
-import com.ObjectRepository.loginFB;
-import com.ObjectRepository.logoutFB;
+import com.ObjectRepository.CommonObject;
+import com.ObjectRepository.LoginFB;
+import com.ObjectRepository.LogoutFB;
 
 
-public  class baseClassTest
+public  class BaseClass
 {
 	
 		public static WebDriver wdriver;
@@ -18,7 +18,7 @@ public  class baseClassTest
 	@BeforeClass
 	public void configBC(String bName)
 		{
-			commonObject co = new commonObject();
+			CommonObject co = new CommonObject();
 			System.out.println("--- Browser Calling---");
 			if(bName.equals("chrome"))
 			{
@@ -29,8 +29,8 @@ public  class baseClassTest
 	@BeforeMethod
 	public void configBM() throws Throwable
 	{
-		fileUtils configUtils = new fileUtils();
-		loginFB lfb = new loginFB();
+		FileUtils configUtils = new FileUtils();
+		LoginFB lfb = new LoginFB();
 		
 		System.out.println("=== Login ===");
 		wdriver.get(configUtils.getURL()); 
@@ -46,7 +46,7 @@ public  class baseClassTest
 	{
 		System.out.println("=== Base class Log out ===");
 		
-		logoutFB lfbout = new logoutFB();
+		LogoutFB lfbout = new LogoutFB();
 		PageFactory.initElements(wdriver, lfbout);
 		lfbout.logoutMenu();
 		lfbout.signout();

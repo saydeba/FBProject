@@ -1,13 +1,13 @@
 package com.ObjectRepository;
 
 import org.openqa.selenium.chrome.ChromeDriver;
-import com.genericLib.baseClassTest;
-import com.genericLib.fileUtils;
+import com.genericLib.BaseClass;
+import com.genericLib.FileUtils;
 
 
-public class commonObject extends baseClassTest
+public class CommonObject extends BaseClass
 {
-	fileUtils configUtils = new fileUtils();
+	FileUtils configUtils = new FileUtils();
 	
 	
 	public void chrome()

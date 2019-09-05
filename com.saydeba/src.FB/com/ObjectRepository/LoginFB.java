@@ -2,15 +2,15 @@ package com.ObjectRepository;
 
 import org.openqa.selenium.support.PageFactory;
 
-import com.genericLib.baseClassTest;
-import com.genericLib.webDriverCommonUtils;
+import com.genericLib.BaseClass;
+import com.genericLib.WebDriverCommonUtils;
 
 
 
-public class loginFB extends baseClassTest 
+public class LoginFB extends BaseClass 
 {
-		webDriverCommonUtils wdcu = new webDriverCommonUtils();
-		fbXpathTest fbxp = new fbXpathTest();
+		WebDriverCommonUtils wdcu = new WebDriverCommonUtils();
+		FbXpath fbxp = new FbXpath();
 		
 		public void loginUID() throws Exception
 		{

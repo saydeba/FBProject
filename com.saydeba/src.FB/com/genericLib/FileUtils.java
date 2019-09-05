@@ -4,11 +4,11 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.util.Properties;
 
-public class fileUtils 
+public class FileUtils 
 {
 Properties pro;
 	
-	public fileUtils()
+	public FileUtils()
 	{
 		try
 		{

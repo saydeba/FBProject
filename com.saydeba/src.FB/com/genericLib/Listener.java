@@ -10,7 +10,7 @@ import org.testng.*;
 /*
  * To execute listener activity, this BaseClass & CustomerTest files needed and run it from testngListener.xml 
  */
-public class listenerTest implements ITestListener 
+public class Listener implements ITestListener 
 {
 	
 	@Override
@@ -19,7 +19,7 @@ public class listenerTest implements ITestListener
 		String failedTestName = result.getMethod().getMethodName();
 		System.out.println("Test Fail: " + failedTestName + ".png");
 		
-		EventFiringWebDriver edriver = new EventFiringWebDriver(baseClassTest.wdriver);
+		EventFiringWebDriver edriver = new EventFiringWebDriver(BaseClass.wdriver);
 		
 		String fileImgPath = "./screenShot\\";
 		File srcFile = edriver.getScreenshotAs(OutputType.FILE);
