@@ -11,8 +11,8 @@ public class LogoutFB extends BaseClass
 		@FindBy(xpath= "//div[@id='logoutMenu']")
 		private WebElement logoutMenu;
 		
-		@FindBy(xpath = "//form[@id='u_5_3']")
-		private WebElement signout;
+		@FindBy(xpath = "//li[@class='_54ni navSubmenu _6398 _64kz __MenuItem']//a[@class='_54nc']")
+		private WebElement logout;
 		
 		public void logoutMenu()
 		{
@@ -20,6 +20,6 @@ public class LogoutFB extends BaseClass
 		}
 		public void signout()
 		{
-			signout.click();
+			logout.click();
 		}
 }

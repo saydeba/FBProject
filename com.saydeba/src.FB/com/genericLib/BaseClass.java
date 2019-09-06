@@ -16,7 +16,7 @@ public  class BaseClass
 	@Parameters("browser")
 	
 	@BeforeClass
-	public void configBC(String bName)
+	public void configBC(String bName) throws Exception
 		{
 			CommonObject co = new CommonObject();
 			System.out.println("--- Browser Calling---");

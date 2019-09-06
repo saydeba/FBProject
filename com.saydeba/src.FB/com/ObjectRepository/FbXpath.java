@@ -19,7 +19,7 @@ public class FbXpath extends BaseClass
 	@FindBy(xpath="//input[@value='Log In']")   //login button
 	WebElement loginBtn;
 	
-	@FindBy(xpath="//div[@id='u_0_c']") //Home button
+	@FindBy(xpath="//span[@class='_1vp5']") //Home button
 	WebElement clickHome;
 	
 	//Methods....
@@ -38,8 +38,9 @@ public class FbXpath extends BaseClass
 	}
 	public void clickHome() throws Exception   // for Home click
 	{
-		Thread.sleep(500);
-		clickHome.click();		
+		//System.out.println("home click");
+		clickHome.click();	
+		Thread.sleep(500);	
 	}
 	
 	
