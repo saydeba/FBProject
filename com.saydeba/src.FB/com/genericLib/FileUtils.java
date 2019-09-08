@@ -39,6 +39,10 @@ Properties pro;
 	{
 		return pro.getProperty("Password");
 	}
+	public String getExcel()
+	{
+		return pro.getProperty("ExcelPath");
+	}
 
 
 }
