@@ -24,10 +24,10 @@ public class FbXpath extends BaseClass
 	@FindBy(xpath="//span[@class='_1vp5']") //Home button
 	WebElement clickHome;
 	
-	@FindBy(name="firstname")	//Signup First Name
+	@FindBy(xpath="//input[@name='firstname']")	//Signup First Name
 	WebElement fname;
 	
-//	@FindBy(name="lastname")	//Signup First Name
+//	@FindBy(name="lastname")	//Signup SurName
 //	WebElement sname;
 	
 	
@@ -53,9 +53,17 @@ public class FbXpath extends BaseClass
 	}
 	public void nameFirst() throws Exception
 	{
-		System.out.println("xpath nameFirst calling");
 		fname.sendKeys(fsu.getFName());
+		
 		Thread.sleep(2000);
 	}
+	
+	
+	
+	
+	
+	
+	
+	
 	
 }

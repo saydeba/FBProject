@@ -6,6 +6,7 @@ import org.testng.annotations.*;
 import com.ObjectRepository.CommonObject;
 import com.ObjectRepository.LoginFB;
 import com.ObjectRepository.LogoutFB;
+import com.testCases.FbSignUp;
 
 
 public  class BaseClass
@@ -31,6 +32,7 @@ public  class BaseClass
 	{
 		FileUtils configUtils = new FileUtils();
 		LoginFB lfb = new LoginFB();
+		//FbSignUp fbs = new FbSignUp();
 		
 		System.out.println("=== Login ===");
 		wdriver.get(configUtils.getURL()); 

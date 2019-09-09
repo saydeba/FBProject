@@ -18,13 +18,15 @@ public class FbSignUp extends BaseClass
 	{
 		FbXpath fbxp = new FbXpath();
 		fbxp.nameFirst();
+		
 	}
 	
 	public String getFName() throws Exception
 	{
 		
-		System.out.println("vvvvvvvvvvvvvvvvvvvvv");
-		return excel.getData(0, 1, 0);
-		
+//		System.out.println("vvvvvvvvvvvvvvvvvvvvv");
+//		System.out.println("fbsignup Data name is: "+excel.getData(0, 1, 0));
+		String nm= excel.getData(0, 1, 0);
+		return nm;
 	}
 }
