@@ -13,12 +13,7 @@ public class DataReturn extends BaseClass
 	ExcelDataConfig excel = new ExcelDataConfig(excelConfig.getExcel());
 	
 	@Test
-//	public void xPathClick() throws Exception
-//	{
-//		
-//		
-//	}
-	
+//	
 	public String getFName() throws Exception
 	{
 //		FbXpath fbxp = new FbXpath();
