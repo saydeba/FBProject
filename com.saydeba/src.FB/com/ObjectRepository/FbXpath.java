@@ -5,14 +5,15 @@ import java.util.List;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
 import com.genericLib.BaseClass;
 import com.genericLib.FileUtils;
-import com.testCases.FbSignUp;
 
 public class FbXpath extends BaseClass
 {
 	FileUtils fu = new FileUtils();
-	FbSignUp fsu = new FbSignUp();
+	DataReturn fsu = new DataReturn();
 	
 	//data member field...
 	@FindBy(name="email")  //email enter....
@@ -59,15 +60,11 @@ public class FbXpath extends BaseClass
 //		String f = fsu.getFName();
 //		System.out.println("Xpath hold this: "+  f);
 //		fname.click();
+//		JavascriptExecutor jse = (JavascriptExecutor)wdriver;
+//		jse.executeScript(fsu.getFName(), fname);
 		
-		JavascriptExecutor jse = (JavascriptExecutor)wdriver;
-		jse.executeScript(fsu.getFName(), fname);
-		
-		
-		
-//		fname.sendKeys(fsu.getFName());
-//		fname.sendKeys("DEv");
-		Thread.sleep(2000);
+		fname.sendKeys(fsu.getFName());
+		Thread.sleep(200);
 	}
 	
 	

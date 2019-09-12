@@ -4,8 +4,10 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.*;
 import com.ObjectRepository.CommonObject;
+import com.ObjectRepository.DataReturn;
 import com.ObjectRepository.LoginFB;
 import com.ObjectRepository.LogoutFB;
+import com.testCases.DevSignup;
 
 
 public  class BaseClass
@@ -31,10 +33,13 @@ public  class BaseClass
 	{
 		FileUtils configUtils = new FileUtils();
 		LoginFB lfb = new LoginFB();
-		//FbSignUp fbs = new FbSignUp();
+		DevSignup deS = new DevSignup();
 		
 		System.out.println("=== Login ===");
 		wdriver.get(configUtils.getURL()); 
+		
+		deS.getFName1();
+		Thread.sleep(1000);
 		
 		lfb.loginUID();
 		Thread.sleep(500);
