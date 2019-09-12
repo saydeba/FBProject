@@ -1,5 +1,8 @@
 package com.ObjectRepository;
 
+import java.util.List;
+
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import com.genericLib.BaseClass;
@@ -53,8 +56,17 @@ public class FbXpath extends BaseClass
 	}
 	public void nameFirst() throws Exception
 	{
-		fname.sendKeys(fsu.getFName());
+//		String f = fsu.getFName();
+//		System.out.println("Xpath hold this: "+  f);
+//		fname.click();
 		
+		JavascriptExecutor jse = (JavascriptExecutor)wdriver;
+		jse.executeScript(fsu.getFName(), fname);
+		
+		
+		
+//		fname.sendKeys(fsu.getFName());
+//		fname.sendKeys("DEv");
 		Thread.sleep(2000);
 	}
 	

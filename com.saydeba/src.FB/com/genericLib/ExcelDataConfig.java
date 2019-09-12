@@ -8,7 +8,7 @@ import org.apache.poi.hssf.usermodel.HSSFWorkbook;
 
 public class ExcelDataConfig 
 {
-	HSSFWorkbook wb;
+	HSSFWorkbook wb; //if Excel file extention is .xlsx.... then XSSF
 	HSSFSheet sheet1;
 	
 		public ExcelDataConfig(String excelPath)

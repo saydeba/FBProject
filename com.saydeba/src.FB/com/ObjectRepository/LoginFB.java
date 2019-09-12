@@ -14,6 +14,7 @@ public class LoginFB extends BaseClass
 		
 		public void loginUID() throws Exception
 		{
+			Thread.sleep(500);
 			wdcu.waitForPageToLoad();
 			PageFactory.initElements(wdriver, fbxp);
 			fbxp.emailOrPhone();

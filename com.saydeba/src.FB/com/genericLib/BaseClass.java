@@ -6,7 +6,6 @@ import org.testng.annotations.*;
 import com.ObjectRepository.CommonObject;
 import com.ObjectRepository.LoginFB;
 import com.ObjectRepository.LogoutFB;
-import com.testCases.FbSignUp;
 
 
 public  class BaseClass

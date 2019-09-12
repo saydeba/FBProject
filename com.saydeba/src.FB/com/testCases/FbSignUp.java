@@ -24,9 +24,9 @@ public class FbSignUp extends BaseClass
 	public String getFName() throws Exception
 	{
 		
-//		System.out.println("vvvvvvvvvvvvvvvvvvvvv");
-//		System.out.println("fbsignup Data name is: "+excel.getData(0, 1, 0));
-		String nm= excel.getData(0, 1, 0);
-		return nm;
+		System.out.println("vvvvvvvvvvvvvvvvvvvvv");
+		System.out.println("fbsignup Data name is: "+excel.getData(0, 1, 0));
+		return excel.getData(0, 1, 0);
+		
 	}
 }
