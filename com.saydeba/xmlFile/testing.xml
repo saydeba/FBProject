@@ -9,7 +9,7 @@
   
   <parameter name= "browser" value="chrome" />
     <classes>
-      	<class name="com.testCases.FbSignUp"/>
+      	<class name="com.testCases.DevSignup"/>
      <!--	<class name="com.testCases.HomeButtonClick"/>-->
     
      
