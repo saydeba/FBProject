@@ -4,12 +4,16 @@ import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.Test;
 import com.ObjectRepository.FbXpath;
 import com.genericLib.BaseClass;
+import com.genericLib.ExcelDataConfig;
+import com.genericLib.FileUtils;
 import com.genericLib.WebDriverCommonUtils;
 
 public class FbSignup extends BaseClass
 {
 	WebDriverCommonUtils wdcu = new WebDriverCommonUtils();
 	FbXpath fbxp = new FbXpath();
+	FileUtils excelConfig = new FileUtils();
+	ExcelDataConfig excel = new ExcelDataConfig(excelConfig.getExcel());
 	
 	@Test
 	
@@ -20,6 +24,15 @@ public class FbSignup extends BaseClass
 			PageFactory.initElements(wdriver, fbxp);
 			fbxp.nameFirst();
 			fbxp.nameSur();
+			fbxp.signEmail();
+				Thread.sleep(200);
+			fbxp.confSignEmail();
+			fbxp.regPw();
+			fbxp.dayDate();
+			fbxp.dayMonth();
+				Thread.sleep(200);
+			//System.out.println("in fbsignup: "+excel.getIntData(0, 1, 6));
+			fbxp.dayYear();
 		}
 		
 //		WebElement ln=wdriver.findElement(By.name("lastname"));

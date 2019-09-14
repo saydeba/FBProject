@@ -23,6 +23,7 @@ public class CommonObject extends BaseClass
 		
 		//pass options object to chromedriver.....
 		wdriver= new ChromeDriver(options);
+		wdriver.manage().window().maximize();
 	}
 
 }

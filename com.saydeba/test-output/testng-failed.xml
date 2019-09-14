@@ -10,8 +10,8 @@
       <class name="com.testCases.FbSignup">
         <methods>
           <include name="configAC"/>
-          <include name="getFName1"/>
           <include name="configBC"/>
+          <include name="getFName"/>
           <include name="configBM"/>
           <include name="configAM"/>
         </methods>

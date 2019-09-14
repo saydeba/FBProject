@@ -9,7 +9,7 @@ import org.apache.poi.hssf.usermodel.HSSFWorkbook;
 public class ExcelDataConfig 
 {
 	HSSFWorkbook wb; //if Excel file extention is .xlsx.... then XSSF
-	HSSFSheet sheet1;
+	HSSFSheet sheetNo;
 	
 		public ExcelDataConfig(String excelPath)
 		{
@@ -24,14 +24,20 @@ public class ExcelDataConfig
 			
 		}
 		
-		public String getData(int sheetNumber, int row, int colomn)
+		public String getStringData(int sheetNumber, int row, int colomn)
 		{
-			sheet1 = wb.getSheetAt(sheetNumber);
-			String data= sheet1.getRow(row).getCell(colomn).getStringCellValue();
+			sheetNo = wb.getSheetAt(sheetNumber);
+			String data= sheetNo.getRow(row).getCell(colomn).getStringCellValue();
 			return data;
 		}
 
-		
+		public int getIntData(int sheetNumber, int row, int colomn)
+		{
+			sheetNo = wb.getSheetAt(sheetNumber);
+			int data= (int) sheetNo.getRow(row).getCell(colomn).getNumericCellValue();
+			//int data= (int) sheetNo.getRow(row).getCell(colomn).getRowIndex();
+			return data;
+		}
 
 	}
 
