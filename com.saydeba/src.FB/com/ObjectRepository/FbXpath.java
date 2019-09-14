@@ -8,12 +8,15 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import com.genericLib.BaseClass;
+import com.genericLib.ExcelDataConfig;
 import com.genericLib.FileUtils;
 
 public class FbXpath extends BaseClass
 {
 	FileUtils fu = new FileUtils();
-	DataReturn fsu = new DataReturn();
+//	DataReturn fsu = new DataReturn();
+	FileUtils excelConfig = new FileUtils();
+	ExcelDataConfig excel = new ExcelDataConfig(excelConfig.getExcel());
 	
 	//data member field...
 	@FindBy(name="email")  //email enter....
@@ -31,8 +34,8 @@ public class FbXpath extends BaseClass
 	@FindBy(xpath="//input[@name='firstname']")	//Signup First Name
 	WebElement fname;
 	
-//	@FindBy(name="lastname")	//Signup SurName
-//	WebElement sname;
+	@FindBy(name="lastname")	//Signup SurName
+	WebElement sname;
 	
 	
 	//Methods...............
@@ -56,18 +59,16 @@ public class FbXpath extends BaseClass
 		Thread.sleep(500);	
 	}
 	public void nameFirst() throws Exception
-	{
-//		String f = fsu.getFName();
-//		System.out.println("Xpath hold this: "+  f);
-//		fname.click();
-//		JavascriptExecutor jse = (JavascriptExecutor)wdriver;
-//		jse.executeScript(fsu.getFName(), fname);
-		
-		fname.sendKeys(fsu.getFName());
+	{		
+		fname.sendKeys(excel.getData(0, 1, 0));
 		Thread.sleep(200);
 	}
 	
-	
+	public void nameSur() throws Exception
+	{		
+		sname.sendKeys(excel.getData(0, 1, 1));
+		Thread.sleep(200);
+	}
 	
 	
 	

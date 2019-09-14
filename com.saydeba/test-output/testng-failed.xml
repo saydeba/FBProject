@@ -7,16 +7,7 @@
   <test thread-count="5" name="Test(failed)" parallel="tests">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="com.testCases.HomeButtonClick">
-        <methods>
-          <include name="configAC"/>
-          <include name="configBC"/>
-          <include name="configBM"/>
-          <include name="configAM"/>
-          <include name="newerIcTest"/>
-        </methods>
-      </class> <!-- com.testCases.HomeButtonClick -->
-      <class name="com.testCases.DevSignup">
+      <class name="com.testCases.FbSignup">
         <methods>
           <include name="configAC"/>
           <include name="getFName1"/>
@@ -24,7 +15,7 @@
           <include name="configBM"/>
           <include name="configAM"/>
         </methods>
-      </class> <!-- com.testCases.DevSignup -->
+      </class> <!-- com.testCases.FbSignup -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

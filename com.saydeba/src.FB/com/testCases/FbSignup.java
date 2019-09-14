@@ -1,40 +1,25 @@
 package com.testCases;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.Test;
-
 import com.ObjectRepository.FbXpath;
 import com.genericLib.BaseClass;
-import com.genericLib.ExcelDataConfig;
-import com.genericLib.FileUtils;
 import com.genericLib.WebDriverCommonUtils;
 
-public class DevSignup extends BaseClass
+public class FbSignup extends BaseClass
 {
 	WebDriverCommonUtils wdcu = new WebDriverCommonUtils();
-//	FileUtils excelConfig = new FileUtils();
-//	ExcelDataConfig excel = new ExcelDataConfig(excelConfig.getExcel());
 	FbXpath fbxp = new FbXpath();
 	
 	@Test
-	//public String signup() throws Exception {
-//		System.setProperty("webdriver.chrome.driver", "E:\\BrowsersDrivers\\chromedriver.exe");
-//		WebDriver driver = new ChromeDriver();
-//		driver.get("https://www.facebook.com");
-//		driver.manage().window().maximize();
-		//WebElement fn=wdriver.findElement(By.xpath("//input[@name='firstname']"));
-		//fn.sendKeys("Dev");
-		public void getFName1() throws Exception
+	
+		public void getFName() throws Exception
 		{
 			Thread.sleep(500);
 			wdcu.waitForPageToLoad();
 			PageFactory.initElements(wdriver, fbxp);
 			fbxp.nameFirst();
-			//return excel.getData(0, 1, 0);
-			
+			fbxp.nameSur();
 		}
 		
 //		WebElement ln=wdriver.findElement(By.name("lastname"));
