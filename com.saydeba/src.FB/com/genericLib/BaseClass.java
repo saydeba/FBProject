@@ -30,12 +30,12 @@ public  class BaseClass
 	{
 		FileUtils configUtils = new FileUtils();
 		LoginFB lfb = new LoginFB();
-		FbSignup deS = new FbSignup();
+		FbSignup fbS = new FbSignup();
 		
 		System.out.println("=== Login ===");
 		wdriver.get(configUtils.getURL()); 
 		
-		deS.getFName(); //for sign up purpose
+		fbS.getSign(); //for sign up purpose
 		Thread.sleep(1000);
 		
 		lfb.loginUID(); //loging purpose

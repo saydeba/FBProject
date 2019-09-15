@@ -17,7 +17,7 @@ public class FbSignup extends BaseClass
 	
 	@Test
 	
-		public void getFName() throws Exception
+		public void getSign() throws Exception
 		{
 			Thread.sleep(500);
 			wdcu.waitForPageToLoad();
@@ -31,28 +31,26 @@ public class FbSignup extends BaseClass
 			fbxp.dayDate();
 			fbxp.dayMonth();
 				Thread.sleep(200);
-			//System.out.println("in fbsignup: "+excel.getIntData(0, 1, 6));
 			fbxp.dayYear();
+			//fbxp.dayYear(excel.getIntData(0, 1, 6));
+			
+			String gender = excel.getStringData(0, 1, 7);
+			if((gender.toLowerCase()).equals("female"))
+			{
+				fbxp.optionFemale();
+			}
+			else if((gender.toLowerCase()).equals("male"))
+			{
+				fbxp.optionMale();
+			}
+			else if((gender.toLowerCase()).equals("custom"))
+			{
+				fbxp.optionCustom();
+			}
+			else{};
+			
 		}
 		
-//		WebElement ln=wdriver.findElement(By.name("lastname"));
-//		ln.sendKeys("key");
-//		WebElement mn=wdriver.findElement(By.name("reg_email__"));
-//		mn.sendKeys("9742990465");
-//		WebElement pw=wdriver.findElement(By.name("reg_passwd__"));
-//		pw.sendKeys("QSpider");
-//		
-//		//Handling dropdowns using select 
-//		WebElement dd=wdriver.findElement(By.name("birthday_day"));
-//		Select day=new Select(dd);
-//		day.selectByIndex(25);
-//		
-//		Thread.sleep(1000); //Java Synchronization statement
-//		
-//		WebElement mm=wdriver.findElement(By.name("birthday_month"));
-//		Select mom=new Select(mm);
-//		mom.selectByIndex(11);
-//		//mom.selectByVisibleText("Nov");
 //		
 //		WebElement yy=wdriver.findElement(By.name("birthday_year"));
 //		Select year=new Select(yy);

@@ -52,6 +52,16 @@ public class FbXpath extends BaseClass
 	@FindBy(xpath="//select[@name='birthday_year']")	//Choose year
 	WebElement dayBirthYear;
 	
+	@FindBy(xpath="//input[@value='1']")	//Choose Female
+	WebElement optionFemale;
+	
+	@FindBy(xpath="//input[@value='2']")	//Choose Mmale
+	WebElement optionMale;
+	
+	@FindBy(xpath="//input[@value='-1']")	//Choose Custom
+	WebElement optionCustom;
+	
+	
 	//Methods...............
 	
 	public void emailOrPhone() throws Exception //for email id or Phone
@@ -111,10 +121,19 @@ public class FbXpath extends BaseClass
 	public void dayYear() throws Exception  
 	{
 		Select year = new Select(dayBirthYear);	
-		Thread.sleep(200);
-		year.selectByIndex(excel.getIntData(0, 1, 6));
-		
+		year.selectByValue("2006");
 	}
-	
+	public void optionFemale() throws Exception  
+	{
+		optionFemale.click();
+	}
+	public void optionMale() throws Exception  
+	{
+		optionMale.click();
+	}
+	public void optionCustom() throws Exception  
+	{
+		optionCustom.click();
+	}
 	
 }
