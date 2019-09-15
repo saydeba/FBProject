@@ -53,7 +53,7 @@ public  class BaseClass
 		PageFactory.initElements(wdriver, lfbout);
 		lfbout.logoutMenu();
 		lfbout.signout();
-		Thread.sleep(2000);
+		Thread.sleep(500);
 		
 	}
 	

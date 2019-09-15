@@ -5,18 +5,20 @@ import java.io.FileInputStream;
 
 import org.apache.poi.hssf.usermodel.HSSFSheet;
 import org.apache.poi.hssf.usermodel.HSSFWorkbook;
+import org.apache.poi.xssf.usermodel.XSSFSheet;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 public class ExcelDataConfig 
 {
-	HSSFWorkbook wb; //if Excel file extention is .xlsx.... then XSSF
-	HSSFSheet sheetNo;
+	XSSFWorkbook wb; //if Excel file extention is .xlsx.... then XSSF not HSSF
+	XSSFSheet sheetNo;
 	
 		public ExcelDataConfig(String excelPath)
 		{
 			try {
 				File src = new File(excelPath);
 				FileInputStream fis = new FileInputStream(src);
-				wb = new HSSFWorkbook(fis);
+				wb = new XSSFWorkbook(fis);
 			} catch (Exception e) {
 				
 				System.out.println(e.getMessage());

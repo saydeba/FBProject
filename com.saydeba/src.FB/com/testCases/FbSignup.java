@@ -30,9 +30,7 @@ public class FbSignup extends BaseClass
 			fbxp.regPw();
 			fbxp.dayDate();
 			fbxp.dayMonth();
-				Thread.sleep(200);
-			fbxp.dayYear();
-			//fbxp.dayYear(excel.getIntData(0, 1, 6));
+			fbxp.dayYear(Integer.toString(excel.getIntData(0, 1, 6)));
 			
 			String gender = excel.getStringData(0, 1, 7);
 			if((gender.toLowerCase()).equals("female"))
@@ -51,22 +49,7 @@ public class FbSignup extends BaseClass
 			
 		}
 		
-//		
-//		WebElement yy=wdriver.findElement(By.name("birthday_year"));
-//		Select year=new Select(yy);
-//		year.selectByValue("1982");
-//		
-//		//Handling Radio Buttons
-//		
-//		WebElement gg=wdriver.findElement(By.xpath("//label[text()='Male']"));
-//		gg.click();
-		
-//		System.out.println("Male option is selected:"+gg.isEnabled());
-//		System.out.println("Male option is selected:"+gg.isDisplayed());
-//		System.out.println("Male option is selected:"+gg.isSelected());
-		
-//		wdriver.close();
-	}
+}
 		
 		
 		

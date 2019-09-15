@@ -118,11 +118,13 @@ public class FbXpath extends BaseClass
 		Select month = new Select(dayBirthMonth);
 		month.selectByIndex(excel.getIntData(0, 1, 5));
 	}
-	public void dayYear() throws Exception  
-	{
-		Select year = new Select(dayBirthYear);	
-		year.selectByValue("2006");
+
+	public void dayYear(String yr) throws Exception 
+	{ 
+		  Select year = new	Select(dayBirthYear);
+		  year.selectByValue(yr);
 	}
+	 
 	public void optionFemale() throws Exception  
 	{
 		optionFemale.click();
