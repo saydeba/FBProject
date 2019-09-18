@@ -7,6 +7,7 @@ import com.ObjectRepository.CommonObject;
 import com.ObjectRepository.LoginFB;
 import com.ObjectRepository.LogoutFB;
 import com.testCases.FbSignup;
+import com.testCases.SearchBox;
 
 public  class BaseClass
 {
@@ -31,16 +32,20 @@ public  class BaseClass
 		FileUtils configUtils = new FileUtils();
 		LoginFB lfb = new LoginFB();
 		FbSignup fbS = new FbSignup();
+		SearchBox sb = new SearchBox();
 		
 		System.out.println("=== Login ===");
 		wdriver.get(configUtils.getURL()); 
 		
-		fbS.getSign(); //for sign up purpose
-		Thread.sleep(1000);
+//		fbS.getSign(); //for sign up purpose
+//		Thread.sleep(1000);
 		
 		lfb.loginUID(); //loging purpose
 		Thread.sleep(500);
 		lfb.loginPW();
+		
+//		sb.searchName();
+//		Thread.sleep(1000);
 		
 	}
 	

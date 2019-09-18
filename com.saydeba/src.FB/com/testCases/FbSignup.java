@@ -3,6 +3,7 @@ package com.testCases;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.Test;
 import com.ObjectRepository.FbXpath;
+import com.ObjectRepository.LogoutFB;
 import com.genericLib.BaseClass;
 import com.genericLib.ExcelDataConfig;
 import com.genericLib.FileUtils;
@@ -12,6 +13,7 @@ public class FbSignup extends BaseClass
 {
 	WebDriverCommonUtils wdcu = new WebDriverCommonUtils();
 	FbXpath fbxp = new FbXpath();
+	LogoutFB lm = new LogoutFB();
 	FileUtils excelConfig = new FileUtils();
 	ExcelDataConfig excel = new ExcelDataConfig(excelConfig.getExcel());
 	
@@ -47,7 +49,20 @@ public class FbSignup extends BaseClass
 			}
 			else{};
 			
+//			do{  
+//				lm.logoutMenu();
+//				lm.signout();
+//		    }
+//			while(fbxp.submitButton()); 
+			
 		}
+	
+	@Test
+	public void getNewSign() throws Exception
+	{
+		//fbxp.creaPageOthers();
+	
+	}
 		
 }
 		

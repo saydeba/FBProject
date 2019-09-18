@@ -3,7 +3,6 @@ package com.ObjectRepository;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.Select;
-
 import com.genericLib.BaseClass;
 import com.genericLib.ExcelDataConfig;
 import com.genericLib.FileUtils;
@@ -61,6 +60,14 @@ public class FbXpath extends BaseClass
 	@FindBy(xpath="//input[@value='-1']")	//Choose Custom
 	WebElement optionCustom;
 	
+	@FindBy(name="websubmit")	// submit button... signup page
+	WebElement submitButton;
+	
+	@FindBy(xpath="//a[@class='_8esh']")
+	WebElement creaPageOthers;
+	
+	@FindBy(name="q")  //input[@name='q'
+	WebElement searchBox;
 	
 	//Methods...............
 	
@@ -118,13 +125,11 @@ public class FbXpath extends BaseClass
 		Select month = new Select(dayBirthMonth);
 		month.selectByIndex(excel.getIntData(0, 1, 5));
 	}
-
 	public void dayYear(String yr) throws Exception 
 	{ 
 		  Select year = new	Select(dayBirthYear);
 		  year.selectByValue(yr);
 	}
-	 
 	public void optionFemale() throws Exception  
 	{
 		optionFemale.click();
@@ -137,5 +142,20 @@ public class FbXpath extends BaseClass
 	{
 		optionCustom.click();
 	}
+	public boolean submitButton() throws Exception  
+	{
+		submitButton.click();
+		return false;
+	}
+	public void creaPageOthers() throws Exception  
+	{
+		creaPageOthers.click();
+	}
+	
+	public void searchBox() throws Exception  
+	{
+		searchBox.sendKeys("sayak chaudhuri");
+	}
+	
 	
 }
