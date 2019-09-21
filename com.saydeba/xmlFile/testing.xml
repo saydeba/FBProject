@@ -11,7 +11,7 @@
     <classes>
       	 <!--  <class name="com.testCases.FbSignup"/>-->
      <!--	<class name="com.testCases.HomeButtonClick"/> -->
-   			 <class name="com.testCases.SearchBox"/>
+   			 <class name="com.testCases.AddCoverPhoto"/>
      
     </classes>
   </test> <!-- Test -->

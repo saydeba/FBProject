@@ -7,15 +7,15 @@
   <test thread-count="5" name="Test(failed)" parallel="tests">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="com.testCases.SearchBox">
+      <class name="com.testCases.AddCoverPhoto">
         <methods>
-          <include name="searchName"/>
           <include name="configAC"/>
+          <include name="addcover"/>
           <include name="configBC"/>
           <include name="configBM"/>
           <include name="configAM"/>
         </methods>
-      </class> <!-- com.testCases.SearchBox -->
+      </class> <!-- com.testCases.AddCoverPhoto -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
