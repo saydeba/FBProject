@@ -108,8 +108,8 @@ public class AddCoverPhoto extends BaseClass
 			//wdriver.findElement(By.xpath("//span[contains(text(), 'Photo albums')]")).click();
 			//wdcu.waitForPageToLoad();
 			Thread.sleep(800);
-			//wdriver.findElement(By.xpath("//button[contains(text(), 'Cancel')]")).click();
-			wdriver.findElement(By.xpath("//i[@class='img sp_XvdHefsjITT sx_aa0b1e')]")).click();
+			//wdriver.findElement(By.xpath("//button[contains(text(), 'Cancel')]")).click(); // switch it on
+			wdriver.findElement(By.xpath("//i[@class='img sp_XvdHefsjITT sx_aa0b1e')]")).click(); // mark off
 			wdriver.switchTo().window(parentWindowHandler);  // switch back to parent window
 	        wdriver.findElement(By.xpath("//span[contains(text(),'Add Cover Photo')]")).click();
 	        selectArtwork();
