@@ -119,8 +119,11 @@ public class AddCoverPhoto extends BaseClass
 			wdriver.findElement(By.xpath("//button[contains(text(), 'Cancel')]")).click(); // switch it on
 			//wdriver.findElement(By.xpath("//i[@class='img sp_XvdHefsjITT sx_aa0b1e')]")).click(); // mark off
 			wdriver.switchTo().window(parentWindowHandler);  // switch back to parent window
+			Thread.sleep(800);
 	        wdriver.findElement(By.xpath("//span[contains(text(),'Add Cover Photo')]")).click();
+	        Thread.sleep(500);
 	        selectArtwork();
+	       // wdriver.findElement(By.xpath("//span[contains(text(), 'Select artwork')]")).click();
 		}
 		else	
 			wdriver.findElement(By.xpath("//a[contains(text(), 'Cancel')]")).click();
