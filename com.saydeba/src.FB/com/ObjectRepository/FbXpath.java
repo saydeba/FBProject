@@ -21,7 +21,7 @@ public class FbXpath extends BaseClass
 	@FindBy(name ="pass")  //password enter
 	WebElement pwEnterEdtBox;
 	
-	@FindBy(xpath="//input[@value='Log In']")   //login button
+	@FindBy(xpath="//input[@type='submit']")   //login button  //input[@value='Log In']
 	WebElement loginBtn;
 	
 	@FindBy(xpath="//span[@class='_1vp5']") //Home button

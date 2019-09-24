@@ -22,7 +22,7 @@ public class AddCoverPhoto extends BaseClass
 							
 					//Screen for Your cover photo --> OK or SKIP or Direct
 		wdriver.findElement(By.xpath("//span[contains(text(),'Add Cover Photo')]")).click();
-		
+		Thread.sleep(500);
 		String nm="Your cover photo"; 
 		if(nm.equals("Your cover photo")){
 		switch(nm)
@@ -55,7 +55,7 @@ public class AddCoverPhoto extends BaseClass
 				System.out.println("Default in Switch case");
 				wdriver.findElement(By.xpath("//span[contains(text(), 'Select photo')]")).click();
 		}
-		//Thread.sleep(1500);
+		Thread.sleep(1500);
 		} 
 		//==================Select photo clicking....
 //		wdriver.findElement(By.xpath("//span[contains(text(), 'Select photo')]")).click();
@@ -86,6 +86,7 @@ public class AddCoverPhoto extends BaseClass
 	private void selectPhoto() throws Exception 
 	{
 		System.out.println("In the selectPhoto method");
+		//Thread.sleep(500);
 		String parentWindowHandler = wdriver.getWindowHandle(); // Store your parent window
 		String subWindowHandler = null;
 
@@ -94,22 +95,29 @@ public class AddCoverPhoto extends BaseClass
 		while (iterator.hasNext()){
 		    subWindowHandler = iterator.next();
 		}
-		wdriver.switchTo().window(subWindowHandler); // switch to popup window
+		wdriver.switchTo().window(subWindowHandler); // switch to sub window
 	
-			// in the popup window, perform necessary actions ....
+			// in the sub window, perform necessary actions ....
        
-		System.out.println("Select photo link clicked.....");
+//		System.out.println("click on photo albums.......");
+//				//click on photo albums...
+//		wdriver.findElement(By.xpath("//span[@class='fsl fwb']")).click();
+		Thread.sleep(500);
+			System.out.println("Recent Photos section.......");
 		String rp= "Recent Photos";
 		if(rp.equals("Recent Photos"))
 		{
-			wdriver.findElement(By.xpath("//div[@class='uiScaledImageContainer'][1]")).click();
-			  // Click on the photo for "New popup Window"
+			//wdriver.findElement(By.xpath("//div[@class='uiScaledImageContainer'][1]")).click();
+			
+			wdriver.findElement(By.xpath("//a[@data-photo-id=\"130746331600525\"]")).click();
+			
+			  // Click on the photo for "cover photo"
 			System.out.println("photo clicked.....");
-			//wdriver.findElement(By.xpath("//span[contains(text(), 'Photo albums')]")).click();
+			//
 			//wdcu.waitForPageToLoad();
 			Thread.sleep(800);
-			//wdriver.findElement(By.xpath("//button[contains(text(), 'Cancel')]")).click(); // switch it on
-			wdriver.findElement(By.xpath("//i[@class='img sp_XvdHefsjITT sx_aa0b1e')]")).click(); // mark off
+			wdriver.findElement(By.xpath("//button[contains(text(), 'Cancel')]")).click(); // switch it on
+			//wdriver.findElement(By.xpath("//i[@class='img sp_XvdHefsjITT sx_aa0b1e')]")).click(); // mark off
 			wdriver.switchTo().window(parentWindowHandler);  // switch back to parent window
 	        wdriver.findElement(By.xpath("//span[contains(text(),'Add Cover Photo')]")).click();
 	        selectArtwork();
